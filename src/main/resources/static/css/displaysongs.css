@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+
+
+html {
+  scroll-behavior: smooth;
+}
+    body {
+        font-family: Arial, sans-serif;
+     background-image:url("/images/headphone.jpg");
+     background-size:cover;
+     background-position:center;
+     background-repeat:no-repeat;
+     background-attachment:fixed;
+        margin: 0;
+        padding: 0;
+    }
+    table {
+     width:76%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+       border-radius: 20%;
+       backdrop-filter:blur(5px);
+      
+    /*   background-color: #CACACA;*/
+    }
+    th, td {
+        text-align:center;
+        padding: 10px;
+ 
+        border-bottom: 1px solid #ddd;
+   
+    }
+    td{
+          color:white;
+          justify-content: center;
+          align-content: center;
+          text-align: center;
+    }
+    th {
+        background-color: #E3AEA2;
+    }
+    tbody tr:hover {
+        background-color: #383838;
+    }
+    audio {
+        width: 100%;
+    }
+    .song-no {
+        width: 50px; /* Adjust as needed */
+    }
+   
+    #link{
+
+   width: 60%;
+    }
+    
+    audio{
+    opacity: 0.5;
+    }

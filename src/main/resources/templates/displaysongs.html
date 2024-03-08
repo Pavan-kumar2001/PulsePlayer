@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Play Songs</title>
+<link rel="stylesheet" href="/css/displaysongs.css">
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Song_Name</th>
+				<th style="width: 150px">Artist</th>
+				<th style="width: 120px">Genre</th>
+				<th id="link">Music</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr th:each="st:${songlist}">
+		
+		<td th:text="${st.name}"></td>
+		<td th:text="${st.artist}"></td>
+		<td th:text="${st.genre}"></td>
+		<td> 
+		<audio controls loop>
+		<source th:src="${st.link}" type="audio/mpeg">
+		</audio>
+		</td>
+	
+		</tr>
+		</tbody>
+	</table>
+</body>
+</html>

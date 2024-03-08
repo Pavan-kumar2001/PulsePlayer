@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+/* Styles for body */
+.beast-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Styles for h1 */
+h1 {
+    font-size: 36px;
+    margin-top: 100px;
+}
+
+/* Styles for a */
+.explore-link {
+    text-decoration: none;
+}
+
+/* Styles for h3 */
+.explore-link h3 {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #16a085;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-link h3:hover {
+    background-color: #1abc9c;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Module</title>
+<link rel="stylesheet" href="/css/register.css"> 
+</head>
+<body>
+  <div class="registration-form">
+<form action="register" method="post">
+<th:block th:if="${session.msg}">
+<p>[[${session.msg}]]</p>
+<th:block th:text="${@userServicesImplementation.removeSessionMsg()}"></th:block>
+</th:block>
+<label>UserName: </label>
+<input type="text" name="username"><br><br>
+<label>Email: </label>
+<input type="email" name="email"><br><br>
+<label>Password: </label>
+<input type="password" name="password"><br><br>
+<label>Gender: </label>
+<input type="radio" name="gender" value="Male">M
+<input type="radio" name="gender" value="Female">F
+<input type="radio" name="gender" value="Others">O <br><br>
+<label>Address: </label>
+<textarea name="address">
+</textarea>
+<br><br>
+<input type="submit" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;
+<Span><a href="loginPage">Already Registered?Click here to Login.</a></Span>
+
+</form>
+</div>
+</body>
+</html>

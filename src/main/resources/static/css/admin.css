@@ -1,0 +1,66 @@
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image:url("/images/admin.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px grey;
+    opacity: 0.8;
+    backdrop-filter:blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #B2B0AF;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.link-wrapper {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.link-wrapper a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.link-wrapper a:hover {
+    background-color: #0056b3;
+}
+
