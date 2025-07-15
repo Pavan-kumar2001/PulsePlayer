@@ -28,11 +28,7 @@ public class NavController {
 	public String samplepayment() {
 		return "samplepayment";
 	}
-	
-	@GetMapping("/samplepayment")
-	public String update() {
-		return "update";
-	}
+
 	
 
 }
